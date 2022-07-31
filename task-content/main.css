@@ -1,0 +1,60 @@
+@import 'tailwind.css';
+
+.container {
+  @apply px-sm md:px-md xl:px-lg
+    mx-auto;
+
+  max-width: 1500px;
+}
+
+@import 'tailwind.css';
+
+.container {
+  @apply px-sm md:px-md xl:px-lg
+    mx-auto;
+
+  max-width: 1500px;
+}
+
+/* Header Styling */
+.StoriesHeader {
+  background: -webkit-linear-gradient(left, #4018EF, #9C1AF0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 'New' tag for first post */
+.new.tag {
+position: relative;
+}
+
+/* set the base styles for 'new' tag */
+.new.tag::before {
+  position: absolute;
+  display: block;
+  left: 80%;
+  color: white;
+  margin: 10px;
+  padding: 3px 4px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: smaller;
+  content: "New";
+  background: -webkit-linear-gradient(left, #4018EF, #9C1AF0);
+}
+
+/* Explore Blog Button styling */
+.BlogButton {
+  background: -webkit-linear-gradient(left, #4018EF, #9C1AF0);
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin: 10px;
+}
+
+.BlogButton:hover {
+  background: rgb(241 245 249);
+  text-decoration: underline;
+  border: #4018EF;
+  color: rgb(71 85 105);
+}
